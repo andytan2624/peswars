@@ -1,39 +1,67 @@
 {
-  "name": "react-redux-course",
-  "version": "1.0.0",
-  "description": "React-Redux course for Treehouse",
-  "main": "src/index.js",
-  "scripts": {
-    "prestart": "npm run lint",
-    "start": "webpack-dev-server --progress --inline --hot",
-    "build": "--config ./webpack.config.js --progress --colors",
-    "lint": "eslint ./src/**/*.{js, jsx} --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "react-rocket-boilerplate",
+  "version": "0.2.0",
+  "author": "Jake Marsh <jakemmarsh@gmail.com>",
+  "description": "Boilerplate using React, Browserify, SASS, and Gulp.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jakemmarsh/react-rocket-boilerplate.git"
   },
   "keywords": [
+    "gulp",
+    "browserify",
     "react",
-    "redux",
-    "treehouse"
+    "sass",
+    "boilerplate"
   ],
-  "author": "Beau Palmquist",
-  "license": "MIT",
-  "dependencies": {
-    "react": "^15.3.2",
-    "react-dom": "^15.3.2",
-    "react-redux": "^4.4.5",
-    "redux": "^3.6.0"
+  "private": true,
+  "engines": {
+    "node": "^0.12.x",
+    "npm": "^2.1.x"
   },
   "devDependencies": {
-    "babel-core": "^6.13.2",
-    "babel-eslint": "^6.1.2",
-    "babel-loader": "^6.2.7",
-    "babel-preset-es2015": "^6.13.2",
-    "babel-preset-react": "^6.11.1",
-    "babel-preset-stage-0": "^6.5.0",
-    "eslint": "^3.3.1",
-    "eslint-plugin-react": "^6.1.2",
-    "react-hot-loader": "^1.3.0",
-    "webpack": "^1.13.2",
-    "webpack-dev-server": "^1.16.2"
+    "babelify": "^6.1.x",
+    "browser-sync": "^2.7.13",
+    "browserify": "^10.2.6",
+    "debowerify": "^1.3.1",
+    "del": "^1.2.0",
+    "express": "^4.13.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-debug": "^2.1.2",
+    "gulp-filelog": "^0.4.1",
+    "gulp-if": "^1.2.5",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^2.0.x",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-streamify": "0.0.5",
+    "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.6",
+    "humps": "^0.6.0",
+    "jquery": "^2.2.0",
+    "lodash": "^3.10.0",
+    "moment": "^2.12.0",
+    "morgan": "^1.6.1",
+    "react": "^0.14.3",
+    "react-addons-css-transition-group": "^0.14.3",
+    "react-document-title": "^1.0.2",
+    "react-dom": "^0.14.3",
+    "react-inlinesvg": "^0.4.2",
+    "react-router": "^2.3.0",
+    "react-svg": "^1.0.0",
+    "react-svg-inline": "^1.0.1",
+    "run-sequence": "^1.1.1",
+    "superagent": "^1.2.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.2.x",
+    "whatwg-fetch": "^0.10.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.2",
+    "react-toolbox": "^0.12.2",
+    "reflux": "^0.3.0"
   }
 }

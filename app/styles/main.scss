@@ -1,0 +1,83 @@
+@import 'vendor/bootstrap/sass/bootstrap-flex';
+
+// Our global config
+@import 'variables';
+
+
+@import 'elements/header';
+@import 'elements/footer';
+
+
+// Global styles
+@import 'nav';
+
+// Home page speific
+@import 'featured-tutorials';
+@import 'main-links';
+@import 'zoe';
+
+
+// TODO: Remove these Kimbo, just here for testing purposes
+.container div {
+    //outline: 1px solid red;
+}
+
+.desk {
+    cursor: pointer;
+    &:hover {
+        outline: 1px solid red;
+    }
+    &.selected-desk {
+        padding: 15px;
+        outline: 5px dashed greenyellow;
+    }
+    &.not-selected-desk {
+        opacity:0.3;
+    }
+}
+
+
+// card and skills thing
+
+
+.card {
+
+    text-align: center;
+    .skills-btn {
+        margin-right: 2px;
+        margin-bottom: 2px;
+    }
+    div,li {
+        text-align: left;
+    }
+}
+
+
+// demo animations
+
+.example-enter {
+    opacity: 0.01;
+    transform: scale(0.1);
+}
+
+.example-enter.example-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 500ms ease-in, transform 200ms ease-in;
+}
+
+.example-leave {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.example-leave.example-leave-active {
+    opacity: 0.01;
+    transform: scale(0.1);
+    transition: opacity 300ms ease-in,transform 100ms ease-in;
+}
+
+.btn-primary.expert {
+    background: green;
+    border: green;
+}

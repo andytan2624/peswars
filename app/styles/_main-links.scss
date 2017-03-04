@@ -1,0 +1,46 @@
+@import 'variables';
+.main-links {
+    @include make-row();
+    margin-bottom: $section-separator-bottom-margin;
+
+    .main-link {
+        @include make-col();
+        @media (max-width: map-get($grid-breakpoints,sm)) {
+            @include make-col-span(6);
+        }
+        @media (min-width: 34.1em) and (max-width: 48em) {
+            @include make-col-span(4);
+        }
+        @media (min-width: 48.1em) {
+            @include make-col-span(4);
+        }
+        flex: 1;
+        text-align: center;
+        margin-bottom: 30px;
+        i {
+            @media (max-width: 34em) {
+                font-size: 10vw;
+            }
+            @media (min-width: 34em) and (max-width: 48em) {
+                font-size: 8vw;
+            }
+            @media (min-width: 48em) {
+                font-size: 6vw;
+            }
+        }
+        .link-title {
+            @media (max-width: 34em) {
+                font-size: 5vw;
+            }
+            @media (min-width: 34em) and (max-width: 48em) {
+                font-size: 4vw;
+            }
+
+            @media (min-width: 48em) {
+                font-size: 3vmin;
+            }
+        }
+    }
+
+
+}

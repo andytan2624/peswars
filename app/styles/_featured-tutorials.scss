@@ -1,0 +1,46 @@
+@import 'variables';
+.featured-tutorials {
+    @include make-row();
+    margin-bottom: $section-separator-bottom-margin;
+
+    .main-tutorial {
+        background: url('http://i1-news.softpedia-static.com/images/news2/Keep-Your-Programming-Code-Safe-Obfuscate-It-480832-2.jpg') no-repeat;
+        @include make-col();
+
+        @media (max-width: 48em) {
+            @include make-col-span(12);
+        }
+        @media (min-width: 48em) {
+            @include make-col-span(6);
+            min-height: 300px;
+        }
+        .title {
+            color: white;
+        }
+    }
+
+    .other-tutorials {
+        display: flex;
+        flex-direction: column;
+
+        @include make-col(0);
+
+        @media (max-width: 48em) {
+            @include make-col-span(12);
+        }
+        @media (min-width: 48em) {
+            @include make-col-span(6);
+        }
+
+        .tutorial-list-item {
+            .title {
+                font-weight: bold;
+            }
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center; // TODO: Maybe left align? Up to you Kimbo
+        }
+    }
+}
